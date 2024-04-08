@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(5, 5, 69);
+}
+.container{
+    position: relative;
+    width: 555px;
+    height: 380px;
+}
+.bg{
+    width: 525px;
+    height: 350px;
+    background: url(img/bg.jpg);
+    background-size: cover;
+    position: absolute;
+    background-position: 100% 0;
+    animation: movebg 10s linear infinite;
+}
+.alian{
+    position: relative;
+    bottom: -150px;
+    left: 150px;
+    transform: scale(100%);
+}
+@keyframes movebg{
+    0%{
+        background-position: 100% 0;
+    }
+    100%{
+        background-position: 0% 0;
+    }
+}
